@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static ConsoleApp1.enclosure;
+using static ConsoleApp1.Enclosure;
 
 namespace ConsoleApp1
 {
@@ -20,25 +20,25 @@ namespace ConsoleApp1
             int animalnamenum = random.Next(0, 10);
             int animalnum = random.Next(0, 2);
 
-            zoo.CreateThing(animalnamenum.GetType());
-            string animalname = ((enclosure.animalnames)animalnamenum).ToString();
+            Zoo.CreateThing(animalnamenum.GetType());
+            string animalname = ((Enclosure.animalnames)animalnamenum).ToString();
 
 
-            enclosure animalEnclosure; //declaration of enclosure
+            Enclosure animalEnclosure; //declaration of enclosure
 
             
             switch (animalnum)
             {
                 case 0:
-                    animalEnclosure = new enclosure("grass"); //instantiation of enclosure
+                    animalEnclosure = new Enclosure("grass"); //instantiation of enclosure
                     Zebra zebra();
                        zebra(0) = new Zebra { };
                     animalEnclosure.addAnimal(zebra(0));
                     int iamanumber = zebra(0).age;
                     break;
                 case 1:
-                    animalEnclosure = new enclosure("cold water");
-                    penguin penguin = new penguin { };
+                    animalEnclosure = new Enclosure("cold water");
+                    Penguin penguin = new Penguin { };
                     animalEnclosure.addAnimal(penguin);
                     break;
                     
