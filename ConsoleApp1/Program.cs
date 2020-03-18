@@ -36,19 +36,25 @@ namespace ConsoleApp1
             Console.WriteLine();
             Console.ReadLine();
 
+                        
             for (int i = 0; i < 10; i++)
             {
                 for (int matesearch = 1; matesearch <= grassEnclosure.storedAnimals.Count; matesearch++)
                 {
-                    if (grassEnclosure.storedAnimals[matesearch].age >= zebra.breedingage && grassEnclosure.storedAnimals[matesearch].gender = 1 && grassEnclosure.storedAnimals[matesearch].cooldown = false)
+                    if ((grassEnclosure.storedAnimals[matesearch].age >= grassEnclosure.storedAnimals[matesearch].breedingage) && (grassEnclosure.storedAnimals[matesearch].gender = true) && (grassEnclosure.storedAnimals[matesearch].cooldown = false))
                     {
                         
+                        Animal.mate(grassEnclosure.storedAnimals[matesearch].GetType().ToString(), grassEnclosure);
                     }
                 }
 
                 for (int matesearch = 1; matesearch <= coldwaterEnclosure.storedAnimals.Count; matesearch++)
                 {
+                    if ((coldwaterEnclosure.storedAnimals[matesearch].age >= coldwaterEnclosure.storedAnimals[matesearch].breedingage) && (coldwaterEnclosure.storedAnimals[matesearch].gender = true) && (coldwaterEnclosure.storedAnimals[matesearch].cooldown = false))
+                    {
 
+                        Animal.mate(coldwaterEnclosure.storedAnimals[matesearch].GetType().ToString(), coldwaterEnclosure);
+                    }
                 }
             }
         }

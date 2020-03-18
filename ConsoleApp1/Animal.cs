@@ -51,11 +51,7 @@ namespace ConsoleApp1
                     Penguin penguin = new Penguin { };
                     enclosuretype.addAnimal(penguin);
                     break;
-
             }
-
-
-
         }
         public void eat()
         {
