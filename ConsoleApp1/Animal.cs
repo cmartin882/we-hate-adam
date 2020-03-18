@@ -35,9 +35,21 @@ namespace ConsoleApp1
             this.happiness = happiness;
 
         }
-        public void mate()
+        public void mate(string animaltype, Enclosure enclosuretype)
         {
-            //searches for 1 female 1 male from a certain species in list
+
+            switch (animaltype)
+            {
+                case "zebra":
+                    Zebra zebra = new Zebra { };
+                    enclosuretype.addAnimal(zebra);
+                    break;
+                case "penguin":
+                    Penguin penguin = new Penguin { };
+                    enclosuretype.addAnimal(penguin);
+                    break;
+
+            }
 
 
 

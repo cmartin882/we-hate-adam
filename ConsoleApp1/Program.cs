@@ -12,8 +12,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-
-            
             //zebraEnclosure.environmentType
 
             Random random = new Random();
@@ -24,34 +22,23 @@ namespace ConsoleApp1
             string animalname = ((Enclosure.animalnames)animalnamenum).ToString();
 
 
-            Enclosure animalEnclosure; //declaration of enclosure
+            Enclosure grassEnclosure; //declaration of enclosures
+            Enclosure coldwaterEnclosure;
+
+            grassEnclosure = new Enclosure("grass"); //instantiation of enclosures
+            coldwaterEnclosure = new Enclosure("cold water");
 
             
-            switch (animalnum)
-            {
-                case 0:
-                    animalEnclosure = new Enclosure("grass"); //instantiation of enclosure
-                    Zebra zebra();
-                       zebra(0) = new Zebra { };
-                    animalEnclosure.addAnimal(zebra(0));
-                    int iamanumber = zebra(0).age;
-                    break;
-                case 1:
-                    animalEnclosure = new Enclosure("cold water");
-                    Penguin penguin = new Penguin { };
-                    animalEnclosure.addAnimal(penguin);
-                    break;
-                    
-            }
-            
-            //searches for 1 female 1 male from a certain species in list
+            //searches for 1 female from a list which is suitable to mate
+
+
 
             Console.WriteLine();
             Console.ReadLine();
 
             for (int i = 0; i < 10; i++)
             {
-                zebra(i).age
+                
             }
         }
     }

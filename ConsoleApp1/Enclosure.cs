@@ -25,7 +25,7 @@ namespace ConsoleApp1
             storedAnimals.Add(animal);
         }
 
-        public 
+        
     }
     
 }
