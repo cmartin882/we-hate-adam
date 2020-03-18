@@ -8,10 +8,14 @@ namespace ConsoleApp1
 {
     public class Zebra : Animal
     {
+        
+        
         public Zebra()
         {
-            this.idealenvironment = "grass";
+            //need breedingage and idealenvironment
+            this.idealenvironment = "grassEnclosure";
             this.breedingage = 4;
+            
 
 
         }

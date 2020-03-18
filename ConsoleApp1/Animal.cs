@@ -15,6 +15,7 @@ namespace ConsoleApp1
         public int breedingage;
         public bool gender;
         public int happiness;
+        public bool cooldown;
         public Animal()
         {
             Random random = new Random();
@@ -33,6 +34,8 @@ namespace ConsoleApp1
 
             int happiness = random.Next(0, 10);
             this.happiness = happiness;
+
+            this.cooldown = false;
 
         }
         public void mate(string animaltype, Enclosure enclosuretype)

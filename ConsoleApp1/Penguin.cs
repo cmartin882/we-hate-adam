@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         public Penguin()
         {
-            this.idealenvironment = "cold water";
+            this.idealenvironment = "coldwaterEnclosure";
             this.breedingage = 5;
         }
 

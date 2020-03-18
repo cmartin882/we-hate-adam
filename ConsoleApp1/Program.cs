@@ -25,8 +25,8 @@ namespace ConsoleApp1
             Enclosure grassEnclosure; //declaration of enclosures
             Enclosure coldwaterEnclosure;
 
-            grassEnclosure = new Enclosure("grass"); //instantiation of enclosures
-            coldwaterEnclosure = new Enclosure("cold water");
+            grassEnclosure = new Enclosure("grassEnclsoure"); //instantiation of enclosures
+            coldwaterEnclosure = new Enclosure("coldwaterEnclosure");
 
             
             //searches for 1 female from a list which is suitable to mate
@@ -38,7 +38,18 @@ namespace ConsoleApp1
 
             for (int i = 0; i < 10; i++)
             {
-                
+                for (int matesearch = 1; matesearch <= grassEnclosure.storedAnimals.Count; matesearch++)
+                {
+                    if (grassEnclosure.storedAnimals[matesearch].age >= zebra.breedingage && grassEnclosure.storedAnimals[matesearch].gender = 1 && grassEnclosure.storedAnimals[matesearch].cooldown = false)
+                    {
+                        
+                    }
+                }
+
+                for (int matesearch = 1; matesearch <= coldwaterEnclosure.storedAnimals.Count; matesearch++)
+                {
+
+                }
             }
         }
     }
